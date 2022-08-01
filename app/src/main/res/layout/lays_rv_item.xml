@@ -28,7 +28,9 @@
             android:layout_height="wrap_content"
             android:padding="3dp"
             android:text="Course Name"
-            android:textColor="@color/black" />
+            android:gravity="center"
+            android:fontFamily="@font/bombing"
+            android:textSize="24sp" />
 
     </LinearLayout>
 

@@ -50,8 +50,16 @@ public class DeckAdapter extends BaseAdapter {
             v = LayoutInflater.from(parent.getContext()).inflate(R.layout.lays_rv_item, parent, false);
         }
         // on below line we are initializing our variables and setting data to our variables.
-        ((TextView) v.findViewById(R.id.txtLays)).setText(laysData.get(position).getLaysName());
-        ((ImageView) v.findViewById(R.id.imgLays)).setImageResource(laysData.get(position).getImgId());
+        TextView laysNm;
+        ImageView laysImg;
+        laysNm = v.findViewById(R.id.txtLays);
+        laysImg = v.findViewById(R.id.imgLays);
+
+        laysNm.setText(laysData.get(position).getLaysName());
+        laysImg.setImageResource(laysData.get(position).getImgId());
+
+        laysNm.setTextColor(laysData.get(position).gettColor());
+
         return v;
     }
 }

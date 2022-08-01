@@ -3,11 +3,12 @@ package com.example.laysappui;
 public class LaysModal {
 
     private String laysName;
-    private int imgId;
+    private int imgId, tColor;
 
-    public LaysModal(String laysName, int imgId) {
+    public LaysModal(String laysName, int imgId, int tColor) {
         this.laysName = laysName;
         this.imgId = imgId;
+        this.tColor = tColor;
     }
 
     public String getLaysName() {
@@ -24,5 +25,13 @@ public class LaysModal {
 
     public void setImgId(int imgId) {
         this.imgId = imgId;
+    }
+
+    public int gettColor() {
+        return tColor;
+    }
+
+    public void settColor(int tColor) {
+        this.tColor = tColor;
     }
 }

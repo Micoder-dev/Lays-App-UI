@@ -81,7 +81,8 @@
             app:max_visible="3"
             app:opacity_end="0.33"
             app:render_above="true"
-            app:rotation_degrees="15" />
+            app:rotation_degrees="15"
+            android:layout_margin="5dp"/>
 
     </com.daprlabs.cardstack.SwipeFrameLayout>
 
