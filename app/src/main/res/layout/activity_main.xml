@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="1dp"
-        android:background="@color/white"
+        android:background="#3748A8"
         android:elevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +52,7 @@
         android:layout_marginTop="32dp"
         android:fontFamily="@font/bombing"
         android:text="Choose your favourite Flavour."
-        android:textColor="#FF9800"
+        android:textColor="#F38BAE"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,15 +75,16 @@
                 rotation degree is the angle of card rotation when card is swiped-->
         <com.daprlabs.cardstack.SwipeDeck
             android:id="@+id/swipe_deck"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_width="300dp"
+            android:layout_height="220dp"
             android:padding="20dp"
             app:card_spacing="10dp"
             app:max_visible="3"
             app:opacity_end="0.33"
             app:render_above="true"
             app:rotation_degrees="15"
-            android:layout_margin="5dp"/>
+            android:layout_margin="5dp"
+            android:layout_gravity="center"/>
 
     </com.daprlabs.cardstack.SwipeFrameLayout>
 

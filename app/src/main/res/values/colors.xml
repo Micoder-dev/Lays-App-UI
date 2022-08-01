@@ -10,7 +10,7 @@
 
     //lays txt color
     <color name="l1_yellow">#FFC107</color>
-    <color name="l2_orange">#FF5722</color>
+    <color name="l2_orange">#FF9800</color>
     <color name="l3_green">#4CAF50</color>
     <color name="l4_red">#F44336</color>
     <color name="l5_blue">#03A9F4</color>
