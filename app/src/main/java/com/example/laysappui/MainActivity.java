@@ -3,13 +3,13 @@ package com.example.laysappui;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-import android.content.Context;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.Toast;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.HorizontalScrollView;
 
 import com.daprlabs.cardstack.SwipeDeck;
+import com.daprlabs.cardstack.SwipeFrameLayout;
 
 import java.util.ArrayList;
 
@@ -20,10 +20,26 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<LaysModal> laysModalArrayList;
     private ContextCompat mContextCompat;
 
+    private SwipeFrameLayout mSwipeFrameLayout;
+    private HorizontalScrollView mHorizontalScrollView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mSwipeFrameLayout = findViewById(R.id.swipeFrameLayout);
+        mHorizontalScrollView = findViewById(R.id.horizontalSV);
+
+        Animation cardStackAnim;
+        cardStackAnim = AnimationUtils.loadAnimation(getApplicationContext(),
+                R.anim.left_to_original);
+        mSwipeFrameLayout.setAnimation(cardStackAnim);
+
+        Animation cardAnim;
+        cardAnim = AnimationUtils.loadAnimation(getApplicationContext(),
+                R.anim.right_to_original);
+        mHorizontalScrollView.setAnimation(cardAnim);
 
         // on below line we are initializing our array list and swipe deck.
         laysModalArrayList = new ArrayList<>();
