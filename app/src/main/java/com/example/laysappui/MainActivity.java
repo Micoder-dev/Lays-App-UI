@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         laysModalArrayList.add(new LaysModal("Honey Barbecue", R.drawable.lays1, mContextCompat.getColor(this, R.color.l1_yellow)));
         laysModalArrayList.add(new LaysModal("Cheddar & SourCream", R.drawable.lays2, mContextCompat.getColor(this, R.color.l2_orange)));
         laysModalArrayList.add(new LaysModal("SourCream & Onion", R.drawable.lays3, mContextCompat.getColor(this, R.color.l3_green)));
-        laysModalArrayList.add(new LaysModal("SourCream & Onion", R.drawable.lays4, mContextCompat.getColor(this, R.color.l4_red)));
+        laysModalArrayList.add(new LaysModal("WAVY", R.drawable.lays4, mContextCompat.getColor(this, R.color.l4_red)));
         laysModalArrayList.add(new LaysModal("Salt & Vinegar", R.drawable.lays5, mContextCompat.getColor(this, R.color.l5_blue)));
 
         // on below line we are creating a variable for our adapter class and passing array list to it.

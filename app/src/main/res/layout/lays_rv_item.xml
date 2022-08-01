@@ -23,6 +23,7 @@
                 android:layout_width="0dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
+                android:layout_gravity="center_vertical"
                 android:src="@drawable/lays1" />
 
             <RelativeLayout
@@ -36,12 +37,12 @@
                     android:id="@+id/txtLays"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:fontFamily="@font/bombing"
+                    android:fontFamily="@font/game_of_squids"
                     android:gravity="center"
+                    android:layout_marginTop="50dp"
                     android:padding="3dp"
                     android:text="Course Name"
-                    android:textSize="24sp" />
+                    android:textSize="14sp" />
 
                 <ImageButton
                     android:id="@+id/imgBtnAdd"
