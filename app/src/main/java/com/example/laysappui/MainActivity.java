@@ -47,32 +47,32 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void cardSwipedLeft(int position) {
                 // on card swipe left we are displaying a toast message.
-                Toast.makeText(MainActivity.this, "Card Swiped Left", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, "Card Swiped Left", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void cardSwipedRight(int position) {
                 // on card swiped to right we are displaying a toast message.
-                Toast.makeText(MainActivity.this, "Card Swiped Right", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, "Card Swiped Right", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void cardsDepleted() {
                 // this method is called when no card is present
-                Toast.makeText(MainActivity.this, "No more courses present", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, "No more courses present", Toast.LENGTH_SHORT).show();
                 cardStack.setAdapter(adapter);
             }
 
             @Override
             public void cardActionDown() {
                 // this method is called when card is swiped down.
-                Log.i("TAG", "CARDS MOVED DOWN");
+                //Log.i("TAG", "CARDS MOVED DOWN");
             }
 
             @Override
             public void cardActionUp() {
                 // this method is called when card is moved up.
-                Log.i("TAG", "CARDS MOVED UP");
+                //Log.i("TAG", "CARDS MOVED UP");
             }
         });
 
