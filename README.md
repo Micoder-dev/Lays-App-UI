@@ -1,1 +1,1 @@
-A simple UI for Lays.
+A simple UI made for Lays
